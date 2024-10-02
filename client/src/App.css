@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  width: 220px; /* Static width */
+  background-color: #1a1a1a; /* Dark background */
+  position: fixed; /* Fixed position */
+  height: 100%; /* Full height */
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  align-items: center; /* Center items */
+  padding: 20px; /* Padding for spacing */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+.navbar-profile {
+  margin-top: 50px;
+  margin-bottom: 20px; /* Space below profile image */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.navbar-profile img {
+  width: 80px; /* Profile image width */
+  height: 80px; /* Profile image height */
+  border-radius: 50%; /* Circular image */
+  border: 3px solid lightblue; /* Border around the image */
+}
+
+.navbar-username {
+  text-align: center; /* Center the username */
+  font-weight: bold; /* Bold font */
+  color: #fff; /* White text */
+  margin-bottom: 20px; /* Space below username */
+}
+
+ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  margin-top:60px ; /* Remove margin */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  align-items: center; /* Center links */
+}
+
+li {
+  width: 100%; /* Full width for list items */
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center vertically */
+  padding: 12px; /* Padding for links */
+  color: #fff; /* White text */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+li:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.icon {
+  font-size: 20px; /* Icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.navbar-link {
+  display: inline-block; /* Show text link */
+}
+
+/* Active link style */
+li.active {
+  background-color: #333; /* Highlighted background for active link */
+}

@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar-container {
+    width: 250px; /* Width of the navbar */
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items */
+    position: fixed; /* Fix the navbar to the left side */
+    padding-top: 20px; /* Top padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: width 0.3s; /* Smooth transition */
+  }
+  
+  .navbar-profile {
+    margin-bottom: 20px; /* Space below the profile picture */
+  }
+  
+  .navbar-profile img {
+    border: 4px solid lightblue; /* Border around the profile image */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 50%; /* Circular image */
+    transition: transform 0.3s; /* Smooth scaling */
+  }
+  
+  .navbar-profile img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  .navbar-username {
+    font-size: 18px; /* Font size for the username */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 20px; /* Space below the username */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    width: 100%; /* Full width */
+  }
+  
+  li {
+    width: 100%; /* Full width for list items */
+  }
+  
+  li a {
+    display: block; /* Block display for links */
+    color: #fff; /* White text color */
+    padding: 12px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+  }
+  
+  li a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #fff; /* Keep text white */
+  }
+  
+  li a.active {
+    background-color: #444; /* Active link background */
+    font-weight: bold; /* Bold text for active link */
+  }
+  

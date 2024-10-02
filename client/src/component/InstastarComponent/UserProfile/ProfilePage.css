@@ -1,0 +1,66 @@
+/* Profile Page Styling */
+
+.profile-page {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .profile-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .profile-stats span {
+    font-weight: bold;
+  }
+  
+  .profile-posts {
+    margin-top: 40px;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .post-item {
+    width: 100%;
+    padding-bottom: 100%; /* Makes each post a square */
+    position: relative;
+  }
+  
+  .post-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
