@@ -190,7 +190,7 @@ const Otpgenrater = async ({ email }) => {
     await Otp.create({ email, otp });
     console.log("OTP stored successfully.");
 
-    // await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
     console.log("Email sent successfully.");
 };
 
